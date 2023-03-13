@@ -350,7 +350,7 @@ MonoBehaviour:
   score: 0
   moveSpeed: 15
   numberOfShots: 1
-  invincibilityTime: 100
+  invincibilityTime: 2
   spriteRenderer: {fileID: 1019363095}
 --- !u!61 &1019363098
 BoxCollider2D:

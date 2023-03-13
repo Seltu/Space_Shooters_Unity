@@ -71,15 +71,16 @@ public class Ship : MonoBehaviour
         Move();
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Shot"))
         {
             var shot = other.GetComponent<Shot>();
             var ship = shot.Ship;
+            Debug.Log("a");
             if (ship.team == team) return;
-            LoseHp(shot.damage);
-            Destroy(other); // to add shot destruction method that also creates explosion in it's place
+            LoseHp(ship.damage);
+            Destroy(other.gameObject); // to add shot destruction method that also creates explosion in it's place
         }
     }
 }

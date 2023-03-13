@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.U2D;
@@ -22,6 +23,18 @@ public class EnemyShip : Ship
         Destroy(gameObject);
     }
 
+    protected override List<ShipShot> CreateShots()
+    {
+        List<ShipShot> shots = new List<ShipShot>();
+        var dir = new Vector2(0, -1);
+        var position = new Vector2( 0, 0);
+        ShipShot shot = new ShipShot();
+        shot.Offset = position;
+        shot.Velocity = dir;
+        shots.Add(shot);
+        return shots;
+    }
+    
     protected override void Update()
     {
         base.Update();

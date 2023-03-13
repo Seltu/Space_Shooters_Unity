@@ -9,7 +9,7 @@ public class PlayerShip : Ship
     public  int numberOfShots;
     public int invincibilityTime;
     public SpriteRenderer spriteRenderer;
-    private int _invincibleTimer = 0;
+    private float _invincibleTimer = 0f;
     private Rigidbody2D _rb;
     private ButtonAxis _vertical = new ButtonAxis(KeyCode.W, KeyCode.S);
     private ButtonAxis _horizontal = new ButtonAxis(KeyCode.D, KeyCode.A);
@@ -71,12 +71,14 @@ public class PlayerShip : Ship
 
     protected override void Update()
     {
+        if (_invincibleTimer >= 0)
+            _invincibleTimer -= Time.deltaTime;
         if(Input.GetKey(KeyCode.Space))
             Shoot();
         _vertical.Check();
         _horizontal.Check();
         var newColor = spriteRenderer.color;
-        newColor.a =  (255 - 255 * _invincibleTimer / 100);
+        newColor.a =  (1 - 1 * _invincibleTimer / invincibilityTime);
         spriteRenderer.color = newColor;
         base.Update();
     }

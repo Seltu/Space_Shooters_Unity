@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
-    [NonSerialized]
+    // [NonSerialized]
     public Ship Ship;
-    public int damage;
     private Vector2 _vel;
 
     public void SetShot(Ship ship, ShipShot shot)
