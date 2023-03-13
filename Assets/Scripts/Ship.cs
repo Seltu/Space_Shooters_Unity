@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -77,7 +76,6 @@ public class Ship : MonoBehaviour
         {
             var shot = other.GetComponent<Shot>();
             var ship = shot.Ship;
-            Debug.Log("a");
             if (ship.team == team) return;
             LoseHp(ship.damage);
             Destroy(other.gameObject); // to add shot destruction method that also creates explosion in it's place

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Shot : MonoBehaviour
@@ -12,6 +11,11 @@ public class Shot : MonoBehaviour
         Ship = ship;
         transform.position += new Vector3(shot.Offset.x, shot.Offset.y, 0);
         _vel = new Vector2(shot.Velocity.x  * ship.shotSpeed, shot.Velocity.y * ship.shotSpeed);
+    }
+
+    private void Start()
+    { 
+        Destroy(gameObject, 5f);
     }
 
     private void Update()

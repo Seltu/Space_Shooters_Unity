@@ -489,7 +489,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -565,5 +565,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 2
-  enemyPrefab: {fileID: 7811043391838864892, guid: 80c6670c6a0fea64db1a7c687d0b7ddd, type: 3}
+  enemyPrefab: {fileID: 6417259730501037954, guid: 214d495f24ec8924b9ee31b4b5832946, type: 3}
   curve: {fileID: 1049911309}
