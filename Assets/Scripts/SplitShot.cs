@@ -9,7 +9,7 @@ public class SplitShot : Shot
 
     private void Start()
     {
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, timeToDisappear);
     }
     private void Split()
     {
