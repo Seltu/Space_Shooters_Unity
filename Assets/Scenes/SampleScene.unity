@@ -123,6 +123,77 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &194954202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194954204}
+  - component: {fileID: 194954203}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &194954203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194954202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc69bff7ee3f4c04ea9bcf78b191cf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 0}
+  enemyLines:
+  - {fileID: 1049911309}
+  enemyPrefabs:
+  - {fileID: 1658691822, guid: c2de217369dbf4b41af2dd5a3b2e2158, type: 3}
+  - {fileID: 2045766551, guid: 4bdb407b54060d04fae9bac29bc6a5ef, type: 3}
+  - {fileID: 6891857250797677072, guid: 5495f6b3818377247aa9c4891d2f58fd, type: 3}
+  - {fileID: 1072547108, guid: 4f0c3fb151b5a674f81b7af19de6ebfb, type: 3}
+  - {fileID: 3315632376829547457, guid: cd2bf2658e0536c44a032a0588c75ae7, type: 3}
+  - {fileID: 6417259730501037954, guid: 214d495f24ec8924b9ee31b4b5832946, type: 3}
+  rounds:
+  - waves:
+    - enemy: 0
+      number: 5
+      curve: 0
+  - waves:
+    - enemy: 0
+      number: 5
+      curve: 0
+  - waves:
+    - enemy: 0
+      number: 5
+      curve: 0
+  - waves:
+    - enemy: 0
+      number: 5
+      curve: 0
+--- !u!4 &194954204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194954202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.7805877, y: -0.5761024, z: 0.018650232}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,7 +481,6 @@ GameObject:
   - component: {fileID: 1049911311}
   - component: {fileID: 1049911310}
   - component: {fileID: 1049911309}
-  - component: {fileID: 1049911312}
   m_Layer: 0
   m_Name: EnemyLine
   m_TagString: Untagged
@@ -433,7 +503,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
-    - position: {x: -29.333862, y: 14.805959, z: 0}
+    - position: {x: -32, y: 15, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -443,9 +513,9 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 0.5, y: 5, z: 0}
-      leftTangent: {x: -20.200975, y: 0.035616875, z: 0}
-      rightTangent: {x: 19.743923, y: -0.03481103, z: -0}
+    - position: {x: 0, y: 5, z: 0}
+      leftTangent: {x: -10.090907, y: 0.04982567, z: 0}
+      rightTangent: {x: 10.149389, y: -0.050114434, z: -0}
       mode: 1
       height: 1
       bevelCutoff: 0
@@ -453,10 +523,30 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 29.289362, y: 15.014467, z: 0}
-      leftTangent: {x: -0.0022296906, y: -0.001619339, z: 0}
+    - position: {x: 32, y: 15, z: 0}
+      leftTangent: {x: -9.12878, y: -3.4765902, z: 0}
+      rightTangent: {x: 0.43008423, y: 0.16441822, z: 0}
+      mode: 1
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 0, y: 5, z: 0}
+      leftTangent: {x: 10.045805, y: 0.0011234283, z: -0}
+      rightTangent: {x: -10.045805, y: -0.0011234283, z: 0}
+      mode: 1
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: -32, y: 15, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
-      mode: 2
+      mode: 0
       height: 1
       bevelCutoff: 0
       bevelSize: 0
@@ -535,8 +625,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: -0.03682518, y: 10.071585, z: 0}
-    m_Extent: {x: 29.65023, y: 5.321584, z: 0}
+    m_Center: {x: -0.050037384, y: 10.040014, z: 0}
+    m_Extent: {x: 32.27999, y: 5.2900143, z: 0}
 --- !u!4 &1049911311
 Transform:
   m_ObjectHideFlags: 0
@@ -552,18 +642,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1049911312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049911308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801bbd5a2aa16804db0520b3c9d6ed2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnTime: 2
-  enemyPrefab: {fileID: 6417259730501037954, guid: 214d495f24ec8924b9ee31b4b5832946, type: 3}
-  curve: {fileID: 1049911309}

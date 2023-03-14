@@ -39,4 +39,9 @@ public class EnemyShip : Ship
         base.Update();
         Shoot();
     }
+
+    public void AddDelay(float delay)
+    {
+        ShootTime += delay;
+    }
 }
