@@ -152,8 +152,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc69bff7ee3f4c04ea9bcf78b191cf66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 0}
+  bossPrefab: {fileID: 8430182397558963480, guid: 9b9d5000c2c393c41ba278c539648c87, type: 3}
   enemyLines:
+  - {fileID: 1049911309}
+  - {fileID: 1049911309}
+  - {fileID: 1049911309}
+  - {fileID: 1049911309}
+  - {fileID: 1049911309}
+  - {fileID: 1049911309}
+  - {fileID: 1049911309}
   - {fileID: 1049911309}
   enemyPrefabs:
   - {fileID: 1658691822, guid: c2de217369dbf4b41af2dd5a3b2e2158, type: 3}
@@ -167,18 +174,16 @@ MonoBehaviour:
     - enemy: 0
       number: 5
       curve: 0
-  - waves:
+      offset: {x: 0, y: 0}
     - enemy: 0
       number: 5
       curve: 0
-  - waves:
+      offset: {x: 0, y: 1}
     - enemy: 0
       number: 5
       curve: 0
-  - waves:
-    - enemy: 0
-      number: 5
-      curve: 0
+      offset: {x: 0, y: -1}
+  progress: 0
 --- !u!4 &194954204
 Transform:
   m_ObjectHideFlags: 0
@@ -187,7 +192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194954202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.7805877, y: -0.5761024, z: 0.018650232}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -409,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed95e206ef36af44b963b28180b73bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1000
   maxHp: 5
   hp: 5
   shotSpeed: 20

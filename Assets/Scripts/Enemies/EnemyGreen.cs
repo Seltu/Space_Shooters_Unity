@@ -19,13 +19,12 @@ namespace Enemies
                     Vector2.Distance(_target, transform.position))
                     _target = pos;
             }
-
             var position = transform.position;
             var shotDirection = new Vector2(_target.x - position.x, _target.y - position.y);
             shotDirection.Normalize();
             var shots = new List<ShipShot>
             {
-                new(new Vector2(shotDirection.x * 2, shotDirection.y * 2), shotDirection)
+                new(shotDirection*2, shotDirection)
             };
             return shots;
         }

@@ -12,11 +12,13 @@ public class Ship : MonoBehaviour
     public Shot shotPrefab;
     public bool _shoot = false;
     public int team = 0;
+    protected SpriteRenderer Renderer;
     protected float ShootTime = 0f;
 
     protected virtual void Start()
     {
         hp = maxHp;
+        Renderer = GetComponent<SpriteRenderer>();
     }
 
     protected virtual void Shoot()

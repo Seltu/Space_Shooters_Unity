@@ -7,6 +7,7 @@ public class EnemyShip : Ship
     public SpriteShapeController curve;
     private float _bezierTimer;
     private Vector2 _previousPoint;
+    private Vector2 _offset;
 
     protected override void Start()
     {
@@ -16,7 +17,7 @@ public class EnemyShip : Ship
     protected override void Move()
     {
         var spline = curve.spline;
-        gameObject.transform.position = spline.GetPoint(_bezierTimer);
+        gameObject.transform.position = spline.GetPoint(_bezierTimer)+_offset;
         _bezierTimer += 0.002f;
         if (_bezierTimer <= 1f) return;
         Destroy(gameObject);
@@ -43,5 +44,10 @@ public class EnemyShip : Ship
     public void AddDelay(float delay)
     {
         ShootTime += delay;
+    }
+    
+    public void SetOffset(Vector2 offset)
+    {
+        _offset = offset;
     }
 }

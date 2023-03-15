@@ -10,4 +10,9 @@ public struct ShipShot
         Offset = offset;
         Velocity = velocity;
     }
+    public ShipShot(float offsetX, float offsetY, float velocityX, float velocityY)
+    {
+        Offset = new Vector2(offsetX, offsetY);
+        Velocity = new Vector2(velocityX, velocityY);
+    }
 }

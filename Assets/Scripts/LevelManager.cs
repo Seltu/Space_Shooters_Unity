@@ -1,13 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Enemies.Bosses;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.U2D;
+using Vector2 = System.Numerics.Vector2;
 
 [System.Serializable]
 public class Round
 {
     public List<Wave> waves;
+
+    public Round(List<Wave> list)
+    {
+        waves = list;
+    }
+
     public void AddWave(int enemy, int number, int curve)
     {
         var wave = new Wave(enemy, number, curve);
@@ -16,11 +25,12 @@ public class Round
 }
 public class LevelManager : MonoBehaviour
 {
-    public GameObject boss;
+    public BossEnemy bossPrefab;
     public List<SpriteShapeController> enemyLines;
     public List<EnemyShip> enemyPrefabs;
     public List<Round> rounds;
-    private int _progress;
+    private BossEnemy _boss;
+    public int progress;
     private float _levelTimer = 1;
     private bool _bossFight;
     
@@ -43,13 +53,11 @@ public class LevelManager : MonoBehaviour
                 bossChannel.Play();
             }
             */
-            //if (boss.summon) {
-            //    AddWaves(level.boss.CreateWaves());
-            //}
-
+            if (_boss.summon) {
+                StartCoroutine(AddRound(_boss.CreateWaves()));
+            }
             return;
         }
-
         /*if (gameLevel > 2) {
             done = true;
             next_state = "WIN";
@@ -57,20 +65,15 @@ public class LevelManager : MonoBehaviour
             on_boss = false;
             return;
         }*/
-
-        if (_progress >= rounds.Count) {
+        if (progress >= rounds.Count) {
             // on_boss = true;
-            // enemies.Add(level.boss);
+            _boss = Instantiate(bossPrefab);
             // AudioSource.PlayClipAtPoint(warningBossSoundEffect, Vector3.zero);
-
-            /*if (boss.aimed) {
-                aim_enemies.Add(level.boss);
-            }*/
             _bossFight = true;
             _levelTimer = 10f;
             return;
         }
-        var currentRound = rounds[_progress];
+        var currentRound = rounds[progress];
         StartCoroutine(AddRound(currentRound));
     }
 
@@ -82,10 +85,10 @@ public class LevelManager : MonoBehaviour
             StartCoroutine(AddWave(wave));
         }
         yield return new WaitForSeconds(6f);
-        _progress += 1;
+        progress += 1;
         if (_bossFight)
         {
-            //boss.summon = false;
+            _boss.summon = false;
         }
     }
 
@@ -93,15 +96,16 @@ public class LevelManager : MonoBehaviour
     {
         for (var i=0; i < wave.number; i++)
         {
-            MakeEnemy(wave.enemy, wave.curve, i*0.5f);
+            MakeEnemy(wave.enemy, wave.curve, wave.offset, i*0.5f);
             yield return new WaitForSeconds(1f / wave.number);
         }
     }
 
-    private void MakeEnemy(int type, int curve, float delay)
+    private void MakeEnemy(int type, int curve, UnityEngine.Vector2 offset, float delay)
     {
         var enemy = Instantiate(enemyPrefabs[type]);
         enemy.curve = enemyLines[curve];
         enemy.AddDelay(delay);
+        enemy.SetOffset(offset);
     }
 }
