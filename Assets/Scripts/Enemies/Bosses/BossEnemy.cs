@@ -63,7 +63,7 @@ namespace Enemies.Bosses
             Move();
         }
 
-        private void OnStep()
+        protected virtual void OnStep()
         {
             summon = true;
             _changedShot = false;

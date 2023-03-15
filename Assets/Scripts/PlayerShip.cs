@@ -7,7 +7,6 @@ public class PlayerShip : Ship
     public  float moveSpeed;
     public  int numberOfShots;
     public int invincibilityTime;
-    public SpriteRenderer spriteRenderer;
     private float _invincibleTimer = 0f;
     private Rigidbody2D _rb;
     private ButtonAxis _vertical = new ButtonAxis(KeyCode.W, KeyCode.S);
@@ -27,8 +26,9 @@ public class PlayerShip : Ship
         _invincibleTimer = 0;
     }
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         _rb = GetComponent<Rigidbody2D>();
     }
 
@@ -76,9 +76,9 @@ public class PlayerShip : Ship
             Shoot();
         _vertical.Check();
         _horizontal.Check();
-        var newColor = spriteRenderer.color;
+        var newColor = Renderer.color;
         newColor.a =  (1 - 1 * _invincibleTimer / invincibilityTime);
-        spriteRenderer.color = newColor;
+        Renderer.color = newColor;
         base.Update();
     }
 

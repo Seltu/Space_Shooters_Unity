@@ -15,7 +15,7 @@ public class Shot : MonoBehaviour
 
     private void Start()
     { 
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 15f);
     }
 
     private void Update()
