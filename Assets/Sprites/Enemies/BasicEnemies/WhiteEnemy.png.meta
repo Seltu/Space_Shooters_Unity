@@ -121,10 +121,10 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 193
-        y: 344
+        y: 339
         width: 904
         height: 832
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: WhiteEnemy_1
       rect:
         serializedVersion: 2
-        x: 1463
-        y: 344
+        x: 1468
+        y: 339
         width: 904
         height: 832
-      alignment: 9
-      pivot: {x: 0.51, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,11 +162,11 @@ TextureImporter:
       name: WhiteEnemy_2
       rect:
         serializedVersion: 2
-        x: 2751
-        y: 344
+        x: 2747
+        y: 339
         width: 904
         height: 832
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
