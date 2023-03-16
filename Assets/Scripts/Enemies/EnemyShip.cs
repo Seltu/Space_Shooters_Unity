@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.U2D;
 
 public class EnemyShip : Ship
@@ -8,7 +10,8 @@ public class EnemyShip : Ship
     private float _bezierTimer;
     private Vector2 _previousPoint;
     private Vector2 _offset;
-
+    public UnityEvent<Vector2> onDeath;
+    
     protected override void Start()
     {
         gameObject.transform.position = curve.spline.GetPoint(_bezierTimer);
@@ -49,5 +52,10 @@ public class EnemyShip : Ship
     public void SetOffset(Vector2 offset)
     {
         _offset = offset;
+    }
+
+    private void OnDestroy()
+    {
+        onDeath.Invoke(transform.position);
     }
 }

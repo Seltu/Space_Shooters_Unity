@@ -91,7 +91,7 @@ namespace Enemies.Bosses
             {
                 case 1:
                     waves.Add(new Wave(2, 3, 3, -5, 0));
-                    waves.Add(new Wave(2, 3, 3, 5, 0));
+                    waves.Add(new Wave(2, 4, 4, 5, 0));
                     break;
                 case 2:
                     waves.Add(new Wave(4, 4, 1, -5, 0));

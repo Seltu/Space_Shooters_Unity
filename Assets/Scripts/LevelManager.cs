@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Enemies.Bosses;
+using Pickups;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.U2D;
-using Vector2 = System.Numerics.Vector2;
+using Random = UnityEngine.Random;
 
 [System.Serializable]
 public class Round
@@ -28,6 +31,7 @@ public class LevelManager : MonoBehaviour
     public BossEnemy bossPrefab;
     public List<SpriteShapeController> enemyLines;
     public List<EnemyShip> enemyPrefabs;
+    public List<Pickup> pickupPrefabs;
     public List<Round> rounds;
     private BossEnemy _boss;
     public int progress;
@@ -101,11 +105,18 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private void MakeEnemy(int type, int curve, UnityEngine.Vector2 offset, float delay)
+    private void MakeEnemy(int type, int curve, Vector2 offset, float delay)
     {
         var enemy = Instantiate(enemyPrefabs[type]);
         enemy.curve = enemyLines[curve];
         enemy.AddDelay(delay);
         enemy.SetOffset(offset);
+        enemy.onDeath.AddListener(SpawnPickup);
+    }
+
+    private void SpawnPickup(Vector2 pos)
+    {
+        if(Random.Range(1, 10)==1)
+            Instantiate(pickupPrefabs[Random.Range(0, pickupPrefabs.Count)], pos, quaternion.identity);
     }
 }

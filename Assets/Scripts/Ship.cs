@@ -7,7 +7,7 @@ public class Ship : MonoBehaviour
     public int maxHp = 1;
     public int hp = 1;
     public float shotSpeed = 4f;
-    public float shotTime = 0f;
+    public float shotTime = 1f;
     public GameObject shootPoint;
     public Shot shotPrefab;
     public bool _shoot = false;
@@ -72,15 +72,13 @@ public class Ship : MonoBehaviour
         Move();
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Shot"))
-        {
-            var shot = other.GetComponent<Shot>();
-            var ship = shot.Ship;
-            if (ship.team == team) return;
-            LoseHp(ship.damage);
-            Destroy(other.gameObject); // to add shot destruction method that also creates explosion in it's place
-        }
+        if (!other.CompareTag("Shot")) return;
+        var shot = other.GetComponent<Shot>();
+        var ship = shot.Ship;
+        if (ship.team == team) return;
+        LoseHp(ship.damage);
+        Destroy(other.gameObject); // to add shot destruction method that also creates explosion in it's place
     }
 }

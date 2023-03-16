@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Pickups;
 using UnityEngine;
 
 public class PlayerShip : Ship

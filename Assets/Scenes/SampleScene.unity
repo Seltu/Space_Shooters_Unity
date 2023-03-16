@@ -169,18 +169,49 @@ MonoBehaviour:
   - {fileID: 1072547108, guid: 4f0c3fb151b5a674f81b7af19de6ebfb, type: 3}
   - {fileID: 3315632376829547457, guid: cd2bf2658e0536c44a032a0588c75ae7, type: 3}
   - {fileID: 6417259730501037954, guid: 214d495f24ec8924b9ee31b4b5832946, type: 3}
+  pickupPrefabs:
+  - {fileID: 6846760203656515890, guid: c5744bc3515c34546b7200604e05b1a1, type: 3}
+  - {fileID: 9177928842224380621, guid: 2a5a650783a7f9c49bf11eed586186ce, type: 3}
+  - {fileID: 7722171883354701388, guid: 52394bc68ea769a4fab2f2bd3c5908cb, type: 3}
+  - {fileID: 8016319658506940628, guid: 509d424b03c368f44b8774c4ec52b34b, type: 3}
   rounds:
   - waves:
     - enemy: 0
-      number: 5
+      number: 10
       curve: 0
       offset: {x: 0, y: 0}
     - enemy: 0
-      number: 5
+      number: 10
       curve: 0
       offset: {x: 0, y: 1}
     - enemy: 0
-      number: 5
+      number: 10
+      curve: 0
+      offset: {x: 0, y: -1}
+  - waves:
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: 0}
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: 1}
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: -1}
+  - waves:
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: 0}
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: 1}
+    - enemy: 0
+      number: 10
       curve: 0
       offset: {x: 0, y: -1}
   progress: 0
@@ -329,7 +360,7 @@ GameObject:
   - component: {fileID: 1019363098}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -414,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed95e206ef36af44b963b28180b73bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1000
+  damage: 10
   maxHp: 5
   hp: 5
   shotSpeed: 20
@@ -427,7 +458,6 @@ MonoBehaviour:
   moveSpeed: 15
   numberOfShots: 1
   invincibilityTime: 2
-  spriteRenderer: {fileID: 1019363095}
 --- !u!61 &1019363098
 BoxCollider2D:
   m_ObjectHideFlags: 0
