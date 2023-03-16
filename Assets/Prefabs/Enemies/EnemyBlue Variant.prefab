@@ -112,6 +112,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7811043391838864893, guid: 80c6670c6a0fea64db1a7c687d0b7ddd, type: 3}
   m_PrefabInstance: {fileID: 7612744684200835884}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &4984290364351634523
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415316741732662993}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.28}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.49978733, y: 0.50738025}
+    oldSize: {x: 10.78, y: 6.443145}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.819343, y: 4.6221867}
+  m_EdgeRadius: 0
 --- !u!95 &3534786647034585553
 Animator:
   serializedVersion: 5
@@ -150,36 +176,13 @@ MonoBehaviour:
   shotSpeed: 10
   shotTime: 2
   shootPoint: {fileID: 415316742170795619}
-  shotPrefab: {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
+  shotPrefab: {fileID: 1844728699604823975, guid: e5916f330a39a51449bd70d6a0fe529f, type: 3}
   _shoot: 0
   team: 1
   curve: {fileID: 0}
---- !u!61 &4984290364351634523
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415316741732662993}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.28}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.84, y: 6.603223}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 8.819343, y: 4.6221867}
-  m_EdgeRadius: 0
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &415316742170795619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7811043392478274895, guid: 80c6670c6a0fea64db1a7c687d0b7ddd, type: 3}

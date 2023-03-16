@@ -5,6 +5,7 @@ public class Shot : MonoBehaviour
     // [NonSerialized]
     public Ship Ship;
     private Vector2 _vel;
+    public float timeToDisappear;
 
     public void SetShot(Ship ship, ShipShot shot)
     {
@@ -14,13 +15,21 @@ public class Shot : MonoBehaviour
     }
 
     private void Start()
-    { 
-        Destroy(gameObject, 15f);
+    {
+        Destroy(gameObject, timeToDisappear);
     }
 
     private void Update()
     {
         Move();
+        Rotation();
+    }
+
+    private void Rotation()
+    {
+        var vel = _vel;
+        vel.Normalize();
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, -vel);
     }
 
     private void Move()

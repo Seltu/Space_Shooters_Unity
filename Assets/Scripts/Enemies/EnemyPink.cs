@@ -12,7 +12,6 @@ namespace Enemies
             var shots = new List<ShipShot>();
             const double quantity = 5;
             var angleIncrement = 2 * Math.PI / quantity;
-
             for (var i = 0; i < quantity; i++)
             {
                 var x = 2 * Math.Cos(i * angleIncrement + _shotTilt);
@@ -24,7 +23,11 @@ namespace Enemies
                 var shot = new ShipShot(position, direction * shotSpeed);
                 shots.Add(shot);
             }
-            _shotTilt += 0.3f;
+
+            if (transform.position.x > 0)
+                _shotTilt += 0.3f;
+            else
+                _shotTilt -= 0.3f;
             return shots;
         }
     }

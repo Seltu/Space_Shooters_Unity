@@ -44,7 +44,7 @@ namespace Enemies.Bosses
             switch (BossStep)
             {
                 case 0:
-                    ChangeShot(0.15f, 10, 0);
+                    ChangeShot(0.2f, 10, 0);
                     shots.Add(new ShipShot(Random.Range(-extents, extents), 0, 0, -1));
                     break;
                 case 1:
@@ -57,7 +57,7 @@ namespace Enemies.Bosses
                 }
                 case 2:
                 {
-                    ChangeShot(1f, 10, 1);
+                    ChangeShot(1f, 15, 1);
                     for (int i = 0; i < 6; i++)
                     {
                         var angle = -Mathf.Cos(Mathf.PI + Mathf.PI * (extents - (i*extents/5)) / extents);
@@ -67,7 +67,7 @@ namespace Enemies.Bosses
                     break;
                 }
                 case 3:
-                    ChangeShot(0.2f, 10, 1);
+                    ChangeShot(0.2f, 15, 1);
                     shots.Add(new ShipShot(0, 0, 0, -1));
                     break;
                 case 4:
@@ -90,11 +90,11 @@ namespace Enemies.Bosses
             switch (BossStep)
             {
                 case 1:
-                    waves.Add(new Wave(2, 3, 3, -5, 0));
-                    waves.Add(new Wave(2, 4, 4, 5, 0));
+                    waves.Add(new Wave(2, 3, 3, -10, 0));
+                    waves.Add(new Wave(2, 4, 4, 10, 0));
                     break;
                 case 2:
-                    waves.Add(new Wave(4, 4, 1, -5, 0));
+                    waves.Add(new Wave(4, 4, 1, -10, 0));
                     waves.Add(new Wave(4, 4, 2, 5,  0));
                     break;
                 case 3:

@@ -129,6 +129,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7811043391838864893, guid: 80c6670c6a0fea64db1a7c687d0b7ddd, type: 3}
   m_PrefabInstance: {fileID: 1769231422931704813}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &8087683752786644101
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8425095871023701520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.106967926, y: -0.2674206}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.22, y: 5.132505}
+    newSize: {x: 10.22, y: 5.132505}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.938015, y: 3.242735}
+  m_EdgeRadius: 0
 --- !u!95 &4932101691753653124
 Animator:
   serializedVersion: 5
@@ -167,33 +193,10 @@ MonoBehaviour:
   shotSpeed: 10
   shotTime: 2
   shootPoint: {fileID: 8425095870312742562}
-  shotPrefab: {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
+  shotPrefab: {fileID: 2590550858488411077, guid: 34c0128c71e2f9e44b7bd3e5d81472f3, type: 3}
   _shoot: 0
   team: 1
   curve: {fileID: 0}
---- !u!61 &8087683752786644101
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8425095871023701520}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.106967926, y: -0.2674206}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.22, y: 5.132505}
-    newSize: {x: 10.22, y: 5.132505}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.938015, y: 3.242735}
-  m_EdgeRadius: 0
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
