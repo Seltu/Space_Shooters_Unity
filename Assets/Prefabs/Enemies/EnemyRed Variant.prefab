@@ -191,7 +191,7 @@ MonoBehaviour:
   maxHp: 20
   hp: 20
   shotSpeed: 10
-  shotTime: 2
+  shotTime: 2.5
   shootPoint: {fileID: 8425095870312742562}
   shotPrefab: {fileID: 2590550858488411077, guid: 34c0128c71e2f9e44b7bd3e5d81472f3, type: 3}
   _shoot: 0

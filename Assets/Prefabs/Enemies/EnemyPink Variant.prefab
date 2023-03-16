@@ -160,8 +160,8 @@ MonoBehaviour:
   damage: 1
   maxHp: 20
   hp: 20
-  shotSpeed: 5
-  shotTime: 0.3
+  shotSpeed: 3.5
+  shotTime: 1
   shootPoint: {fileID: 261385852441785627}
   shotPrefab: {fileID: 823746762408508200, guid: 8d90fdb80330f6a489a7c7d64dab00a5, type: 3}
   _shoot: 0

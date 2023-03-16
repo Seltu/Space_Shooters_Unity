@@ -54,8 +54,10 @@ public class EnemyShip : Ship
         _offset = offset;
     }
 
-    private void OnDestroy()
+    protected override void LoseHp(int receivedDamage)
     {
-        onDeath.Invoke(transform.position);
+        if(hp-receivedDamage <= 0)
+            onDeath.Invoke(transform.position);
+        base.LoseHp(receivedDamage);
     }
 }

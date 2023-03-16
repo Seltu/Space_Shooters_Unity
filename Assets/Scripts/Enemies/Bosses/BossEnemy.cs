@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Enemies.Bosses
 {
@@ -12,10 +13,13 @@ namespace Enemies.Bosses
         public bool summon = true;
         private bool _changedShot = false;
         private GameObject _target = null;
+        public UnityEvent onDefeat;
 
-        public void SetTarget(GameObject target)
+        protected override void LoseHp(int receivedDamage)
         {
-            this._target = target;
+            if(hp - receivedDamage <= 0)
+                onDefeat.Invoke();
+            base.LoseHp(receivedDamage);
         }
 
         protected void ChangeShot(float time, int speed)

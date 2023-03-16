@@ -25,9 +25,9 @@ namespace Enemies
             }
 
             if (transform.position.x > 0)
-                _shotTilt += 0.3f;
+                _shotTilt += 0.1f;
             else
-                _shotTilt -= 0.3f;
+                _shotTilt -= 0.1f;
             return shots;
         }
     }

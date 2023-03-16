@@ -26,13 +26,20 @@ public class Round
         waves.Add(wave);
     }
 }
+[System.Serializable]
+public class Level
+{
+    public BossEnemy boss;
+    public List<Round> rounds;
+}
 public class LevelManager : MonoBehaviour
 {
-    public BossEnemy bossPrefab;
+    public List<Level> levels;
+    public int level;
+    public List<PlayerShip> players;
     public List<SpriteShapeController> enemyLines;
     public List<EnemyShip> enemyPrefabs;
     public List<Pickup> pickupPrefabs;
-    public List<Round> rounds;
     private BossEnemy _boss;
     public int progress;
     private float _levelTimer = 1;
@@ -44,15 +51,15 @@ public class LevelManager : MonoBehaviour
             return;
         }
         if (_bossFight) {
-            /*if (gameLevel == 0 && !bossChannel.isPlaying) {
+            /*if (level == 0 && !bossChannel.isPlaying) {
                 bossChannel.clip = vsBaronMusic;
                 bossChannel.Play();
             }
-            if (gameLevel == 1 && !bossChannel.isPlaying) {
+            if (level == 1 && !bossChannel.isPlaying) {
                 bossChannel.clip = vsJesterMusic;
                 bossChannel.Play();
             }
-            if (gameLevel == 2 && !bossChannel.isPlaying) {
+            if (level == 2 && !bossChannel.isPlaying) {
                 bossChannel.clip = vsMonarchMusic;
                 bossChannel.Play();
             }
@@ -62,25 +69,37 @@ public class LevelManager : MonoBehaviour
             }
             return;
         }
-        /*if (gameLevel > 2) {
+        /*if (level > 2) {
             done = true;
             next_state = "WIN";
             gameLevel = 0;
             on_boss = false;
             return;
         }*/
-        if (progress >= rounds.Count) {
+        if (progress >= levels[level].rounds.Count) {
             // on_boss = true;
-            _boss = Instantiate(bossPrefab);
+            _boss = Instantiate(levels[level].boss);
+            _boss.onDefeat.AddListener(NextLevel);
             // AudioSource.PlayClipAtPoint(warningBossSoundEffect, Vector3.zero);
             _bossFight = true;
             _levelTimer = 10f;
             return;
         }
-        var currentRound = rounds[progress];
+        var currentRound = levels[level].rounds[progress];
         StartCoroutine(AddRound(currentRound));
     }
 
+    private void NextLevel()
+    {
+        level++;
+        _bossFight = false;
+        progress = 0;
+        foreach (var player in players)
+        {
+            player.LevelScale(level);
+        }
+    }
+    
     private IEnumerator AddRound(Round currentRound)
     {
         _levelTimer = 12f;
@@ -98,10 +117,12 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator AddWave(Wave wave)
     {
+        //yield return new WaitForSeconds(1f/wave.number);
         for (var i=0; i < wave.number; i++)
         {
+            yield return new WaitForSeconds(0.5f / wave.number);
             MakeEnemy(wave.enemy, wave.curve, wave.offset, i*0.5f);
-            yield return new WaitForSeconds(1f / wave.number);
+            yield return new WaitForSeconds(0.5f / wave.number);
         }
     }
 

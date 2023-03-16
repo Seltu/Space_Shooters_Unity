@@ -90,4 +90,15 @@ public class PlayerShip : Ship
         movement.y = _vertical.GetAxis();
         _rb.velocity = movement.normalized * moveSpeed;
     }
+
+    public void LevelScale(int level)
+    {
+        StopAllCoroutines();
+        maxHp = 5 + level;
+        hp = maxHp;
+        numberOfShots = 1 + level;
+        damage = 10 - level * 2;
+        shotTime = 0.2f;
+        moveSpeed = 15 + level * 2;
+    }
 }
