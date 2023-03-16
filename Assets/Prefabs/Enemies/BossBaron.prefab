@@ -111,10 +111,10 @@ MonoBehaviour:
   _shoot: 0
   team: 1
   shotPrefabs:
-  - {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
-  - {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
+  - {fileID: 489929544160984645, guid: d0b89e786f59ce04eb9c8ac8c0140c70, type: 3}
+  - {fileID: 2726279715630076186, guid: 2055e4faf3eddaf4bbbd07ba55b927ed, type: 3}
   bossCycle: 4
-  bossTimer: 0.9
+  bossTimer: 0.87
   summon: 1
 --- !u!50 &-6289750340846358230
 Rigidbody2D:
@@ -527,7 +527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8430182398000499183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

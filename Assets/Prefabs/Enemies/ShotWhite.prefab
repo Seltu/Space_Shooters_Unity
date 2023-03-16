@@ -9,11 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4977407285881340728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
       propertyPath: m_Name
-      value: SplitShot Variant
+      value: ShotWhite
       objectReference: {fileID: 0}
     - target: {fileID: 5339700629576859126, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5339700629576859126, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5339700629576859126, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5339700629576859126, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55,6 +63,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6916384843902044250, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6f5d191cb04ea6c468a2e6ea7ceb354f, type: 3}
     - target: {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
       propertyPath: _split
       value: 4
@@ -84,6 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ship: {fileID: 0}
-  split: 4
-  splitPrefab: {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
   timeToDisappear: 1
+  split: 4
+  splitPrefab: {fileID: 4202809033318699937, guid: ceb255291af848040b6cb8c6785abfe3, type: 3}

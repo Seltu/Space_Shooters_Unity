@@ -596,6 +596,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7811043391838864893, guid: 80c6670c6a0fea64db1a7c687d0b7ddd, type: 3}
   m_PrefabInstance: {fileID: 7637581208619465942}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &8882388633940162664
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403148240272357675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.07, y: 0.04}
+  serializedVersion: 2
+  m_Radius: 1.6514801
 --- !u!95 &1556066744366715177
 Animator:
   serializedVersion: 5
@@ -634,26 +650,13 @@ MonoBehaviour:
   shotSpeed: 10
   shotTime: 2
   shootPoint: {fileID: 403148240974928281}
-  shotPrefab: {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
+  shotPrefab: {fileID: 8420089632560482113, guid: 37a2b6f03d8904749bccf9dc30a53edd, type: 3}
   _shoot: 0
   team: 1
   curve: {fileID: 0}
---- !u!58 &8882388633940162664
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403148240272357675}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.07, y: 0.04}
-  serializedVersion: 2
-  m_Radius: 1.6514801
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &403148240974928281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7811043392478274895, guid: 80c6670c6a0fea64db1a7c687d0b7ddd, type: 3}

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8853677878864953460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8853677878864953458}
+  - component: {fileID: 8853677878864953461}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8853677878864953458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853677878864953460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8853677878864953461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853677878864953460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc69bff7ee3f4c04ea9bcf78b191cf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossPrefab: {fileID: 8430182397558963480, guid: 9b9d5000c2c393c41ba278c539648c87, type: 3}
+  enemyLines:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  enemyPrefabs:
+  - {fileID: 1658691822, guid: c2de217369dbf4b41af2dd5a3b2e2158, type: 3}
+  - {fileID: 2045766551, guid: 4bdb407b54060d04fae9bac29bc6a5ef, type: 3}
+  - {fileID: 6891857250797677072, guid: 5495f6b3818377247aa9c4891d2f58fd, type: 3}
+  - {fileID: 1072547108, guid: 4f0c3fb151b5a674f81b7af19de6ebfb, type: 3}
+  - {fileID: 3315632376829547457, guid: cd2bf2658e0536c44a032a0588c75ae7, type: 3}
+  - {fileID: 6417259730501037954, guid: 214d495f24ec8924b9ee31b4b5832946, type: 3}
+  pickupPrefabs:
+  - {fileID: 6846760203656515890, guid: c5744bc3515c34546b7200604e05b1a1, type: 3}
+  - {fileID: 9177928842224380621, guid: 2a5a650783a7f9c49bf11eed586186ce, type: 3}
+  - {fileID: 7722171883354701388, guid: 52394bc68ea769a4fab2f2bd3c5908cb, type: 3}
+  - {fileID: 8016319658506940628, guid: 509d424b03c368f44b8774c4ec52b34b, type: 3}
+  rounds:
+  - waves:
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: 0}
+    - enemy: 3
+      number: 1
+      curve: 0
+      offset: {x: 0, y: 1}
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: -1}
+  - waves:
+    - enemy: 4
+      number: 10
+      curve: 0
+      offset: {x: 0, y: 0}
+    - enemy: 1
+      number: 3
+      curve: 0
+      offset: {x: 0, y: 1}
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: -1}
+  - waves:
+    - enemy: 0
+      number: 10
+      curve: 0
+      offset: {x: 0, y: 0}
+    - enemy: 2
+      number: 1
+      curve: 0
+      offset: {x: 0, y: 1}
+    - enemy: 5
+      number: 10
+      curve: 0
+      offset: {x: 0, y: -1}
+  progress: 0

@@ -5,12 +5,6 @@ public class SplitShot : Shot
 {
     public int split;
     public Shot splitPrefab;
-    public float timeToDisappear;
-
-    private void Start()
-    {
-        Destroy(gameObject, timeToDisappear);
-    }
     private void Split()
     {
         if(splitPrefab == null) return;
