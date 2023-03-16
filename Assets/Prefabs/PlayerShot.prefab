@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ship: {fileID: 0}
+  timeToDisappear: 15
 --- !u!58 &9211493173820466905
 CircleCollider2D:
   m_ObjectHideFlags: 0
