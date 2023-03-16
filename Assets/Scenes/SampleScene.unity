@@ -858,14 +858,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 8430182397558963480, guid: 9b9d5000c2c393c41ba278c539648c87, type: 3}
   enemyLines:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 307765203971132796}
+  - {fileID: 307765203971132796}
+  - {fileID: 307765203971132796}
+  - {fileID: 6335257250920667270}
+  - {fileID: 9031507696258283886}
+  - {fileID: 307765203971132796}
+  - {fileID: 307765203971132796}
+  - {fileID: 307765203971132796}
   enemyPrefabs:
   - {fileID: 1658691822, guid: c2de217369dbf4b41af2dd5a3b2e2158, type: 3}
   - {fileID: 2045766551, guid: 4bdb407b54060d04fae9bac29bc6a5ef, type: 3}
