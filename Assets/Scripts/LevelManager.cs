@@ -44,6 +44,7 @@ public class LevelManager : MonoBehaviour
     public int progress;
     private float _levelTimer = 1;
     private bool _bossFight;
+    public GameObject audioController;
     
     private void Update() {
         if (_levelTimer > 0) {
@@ -83,6 +84,7 @@ public class LevelManager : MonoBehaviour
             // AudioSource.PlayClipAtPoint(warningBossSoundEffect, Vector3.zero);
             _bossFight = true;
             _levelTimer = 10f;
+            audioController.GetComponent<MusicController>().PlayWarning();
             return;
         }
         var currentRound = levels[level].rounds[progress];
