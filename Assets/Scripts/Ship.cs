@@ -76,7 +76,7 @@ public class Ship : MonoBehaviour
     {
         if (!other.CompareTag("Shot")) return;
         var shot = other.GetComponent<Shot>();
-        var ship = shot.Ship;
+        var ship = shot.ship;
         if (ship.team == team) return;
         LoseHp(ship.damage);
         Destroy(other.gameObject); // to add shot destruction method that also creates explosion in it's place

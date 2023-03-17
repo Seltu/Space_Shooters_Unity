@@ -1,17 +1,18 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Shot : MonoBehaviour
 {
     // [NonSerialized]
-    public Ship Ship;
-    private Vector2 _vel;
+    [FormerlySerializedAs("Ship")] public Ship ship;
+    protected Vector2 Vel;
     public float timeToDisappear;
 
     public void SetShot(Ship ship, ShipShot shot)
     {
-        Ship = ship;
+        this.ship = ship;
         transform.position += new Vector3(shot.Offset.x, shot.Offset.y, 0);
-        _vel = new Vector2(shot.Velocity.x  * ship.shotSpeed, shot.Velocity.y * ship.shotSpeed);
+        Vel = new Vector2(shot.Velocity.x  * ship.shotSpeed, shot.Velocity.y * ship.shotSpeed);
     }
 
     private void Start()
@@ -27,14 +28,14 @@ public class Shot : MonoBehaviour
 
     private void Rotation()
     {
-        var vel = _vel;
+        var vel = Vel;
         vel.Normalize();
         transform.rotation = Quaternion.LookRotation(Vector3.forward, -vel);
     }
 
-    private void Move()
+    protected virtual void Move()
     {
-        transform.position += (Vector3) _vel * Time.deltaTime;
+        transform.position += (Vector3) Vel * Time.deltaTime;
     }
 
     private void OnBecameInvisible()

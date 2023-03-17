@@ -141,9 +141,9 @@ MonoBehaviour:
   _shoot: 0
   team: 1
   shotPrefabs:
-  - {fileID: 9083286077314648728, guid: 04825f523302b9946a130747c4dd4cd8, type: 3}
-  - {fileID: 9083286077314648728, guid: 2fb9957084ba3244fb4b8027ca42fdbb, type: 3}
-  - {fileID: -7638467737317196362, guid: bc6b63e9cc00f8f4ba4ef3b5bea71205, type: 3}
+  - {fileID: 3791309390158156911, guid: 9d06b5b72d327974498bffdf29dd83d3, type: 3}
+  - {fileID: 6193990679132810294, guid: 0ee2705cea9a40d4fb930551dca000cc, type: 3}
+  - {fileID: 6973210182540289968, guid: c24552241b97e8e48943bd0019b361e8, type: 3}
   bossCycle: 5
   bossTimer: 0.8
   summon: 1

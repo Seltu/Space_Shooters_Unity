@@ -44,7 +44,7 @@ namespace Enemies.Bosses
                     position += (Vector3)_direction * (0.01f * _moveSpeed);
                     if (position.x is > 20 or < -20)
                         _direction.x *= -1;
-                    if (position.y is > 12 or < -3)
+                    if (position.y is > 12 or < 0)
                         _direction.y *= -1;
                 }
 
@@ -137,24 +137,15 @@ namespace Enemies.Bosses
                 var waves = new List<Wave>();
                 switch (BossStep)
                 {
-                    case 1:
-                        waves.Add(new Wave(2, 3, 3, -5, 0));
-                        waves.Add(new Wave(2, 3, 3, 5, 0));
-                        break;
-                    case 2:
-                        waves.Add(new Wave(4, 4, 1, -5, 0));
-                        waves.Add(new Wave(4, 4, 2, 5,  0));
-                        break;
-                    case 3:
-                        waves.Add(new Wave(4, 2, 6));
-                        waves.Add(new Wave(4, 2, 7));
-                        waves.Add(new Wave(4, 2, 6, 0, 2));
-                        waves.Add(new Wave(4, 2, 7, 0, 2));
-                        waves.Add(new Wave(4, 2, 6, 0, -2));
-                        waves.Add(new Wave(4, 2, 7, 0, -2));
-                        break;
                     case 4:
-                        waves.Add(new Wave(4, 6, 5));
+                        waves.Add(new Wave(0, 6, 5));
+                        waves.Add(new Wave(4, 6, 5, 0, -1));
+                        waves.Add(new Wave(2, 6, 5, 0, -2));
+                        waves.Add(new Wave(1, 6, 5, 0, -3));
+                        break;
+                    case 5:
+                        waves.Add(new Wave(5, 6, 6));
+                        waves.Add(new Wave(5, 6, 7));
                         break;
                 }
                 return new Round(waves);
@@ -180,5 +171,5 @@ namespace Enemies.Bosses
                     _ => _moveSpeed
                 };
             }
-        }
+    }
     }

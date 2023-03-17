@@ -59,7 +59,7 @@ namespace Enemies.Bosses
             var shotDirection = new Vector2();
             if (BossStep == 0)
             {
-                ChangeShot(0.7f, 7, 0);
+                ChangeShot(0.9f, 7, 0);
                 shotPrefab = _blue ? shotPrefabs[0] : shotPrefabs[1];
                 for (var i = 0; i < 3; i++)
                 {
@@ -110,6 +110,7 @@ namespace Enemies.Bosses
 
             if ((BossStep == 2 || BossStep == 3) && _healthStage <= 1)
             {
+                var aux = -5;
                 var quantity = 6;
                 if (BossStep == 2)
                 {
@@ -120,12 +121,13 @@ namespace Enemies.Bosses
                 {
                     quantity = 3;
                     shotPrefab = shotPrefabs[2];
+                    aux = 5;
                 }
 
                 for (var i = 0; i < quantity; i++)
                 {
                     var angle = i * 2 * Mathf.PI / quantity + Mathf.PI / quantity / 2;
-                    var shot = new ShipShot(new Vector2(-5 + Mathf.Cos(angle), 1 * Mathf.Sin(angle)),
+                    var shot = new ShipShot(new Vector2(aux + Mathf.Cos(angle), 1 * Mathf.Sin(angle)),
                         new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)));
                     left.Add(shot);
                 }

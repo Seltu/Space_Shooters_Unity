@@ -15,7 +15,7 @@ public class SplitShot : Shot
                 new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle)));
             var transform1 = transform;
             var shot = Instantiate(splitPrefab, transform1.position, transform1.rotation);
-            shot.SetShot(Ship, instruction);
+            shot.SetShot(ship, instruction);
         }
     }
     

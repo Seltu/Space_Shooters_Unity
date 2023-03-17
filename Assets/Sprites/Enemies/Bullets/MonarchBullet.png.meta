@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
@@ -127,7 +127,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MonarchBullet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 341
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623f6e0378cb43843bb5bcd05a18b3ad
+      internalID: -545124469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 568
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c004a599c1d529e4480c3719451383d1
+      internalID: -2140173728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_2
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 568
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae9b5b14b534824e8f7210c0ccdc711
+      internalID: 2133418461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_3
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 568
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cc754571b29974593342c977841e57
+      internalID: 94997948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_4
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 568
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eeda6c3a3b044c4b85c9d67c1f11311
+      internalID: -493817383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_5
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 568
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735424d0903ac4d4681b4979b6a9cf31
+      internalID: 1710987591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_6
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 568
+        width: 339
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37fdcb6633990e49a7a8f29eedbc704
+      internalID: 49919191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 341
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa8defdf8489ef478074401438be636
+      internalID: 1520265480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_8
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 0
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd33b79aaee70742afa4a86e8900d72
+      internalID: 249574974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_9
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 0
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80425be74a0ef224998f6d973b27525c
+      internalID: 500586290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_10
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 0
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced6ac7fc22865541be511e03e787ec0
+      internalID: -1532277554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_11
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 0
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8cdc4b5ee3d0442b0192aef32a522e
+      internalID: 1380366145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_12
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 0
+        width: 342
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5045afe07f6f84288dfb656498e7c1
+      internalID: 1610157876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonarchBullet_13
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 339
+        height: 561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68766abc92963745badc321513fe2b2
+      internalID: -1707298142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +432,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MonarchBullet_3: 94997948
+      MonarchBullet_7: 1520265480
+      MonarchBullet_10: -1532277554
+      MonarchBullet_9: 500586290
+      MonarchBullet_0: -545124469
+      MonarchBullet_2: 2133418461
+      MonarchBullet_6: 49919191
+      MonarchBullet_4: -493817383
+      MonarchBullet_13: -1707298142
+      MonarchBullet_8: 249574974
+      MonarchBullet_5: 1710987591
+      MonarchBullet_12: 1610157876
+      MonarchBullet_1: -2140173728
+      MonarchBullet_11: 1380366145
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
