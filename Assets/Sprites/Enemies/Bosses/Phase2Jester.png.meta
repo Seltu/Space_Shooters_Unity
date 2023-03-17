@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -120,9 +120,9 @@ TextureImporter:
       name: Phase2Jester_0
       rect:
         serializedVersion: 2
-        x: 113
+        x: 123
         y: 148
-        width: 1506
+        width: 1485
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -141,9 +141,9 @@ TextureImporter:
       name: Phase2Jester_1
       rect:
         serializedVersion: 2
-        x: 1752
+        x: 1760
         y: 148
-        width: 1500
+        width: 1485
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -162,9 +162,9 @@ TextureImporter:
       name: Phase2Jester_2
       rect:
         serializedVersion: 2
-        x: 3337
+        x: 3351
         y: 148
-        width: 1513
+        width: 1498
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -183,9 +183,9 @@ TextureImporter:
       name: Phase2Jester_3
       rect:
         serializedVersion: 2
-        x: 4842
+        x: 4849
         y: 148
-        width: 1542
+        width: 1531
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,9 +204,9 @@ TextureImporter:
       name: Phase2Jester_4
       rect:
         serializedVersion: 2
-        x: 6419
+        x: 6426
         y: 148
-        width: 1555
+        width: 1538
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -225,9 +225,9 @@ TextureImporter:
       name: Phase2Jester_6
       rect:
         serializedVersion: 2
-        x: 7975
+        x: 7964
         y: 148
-        width: 1562
+        width: 1567
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -246,9 +246,9 @@ TextureImporter:
       name: Phase2Jester_8
       rect:
         serializedVersion: 2
-        x: 9548
+        x: 9558
         y: 148
-        width: 1572
+        width: 1559
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -267,9 +267,9 @@ TextureImporter:
       name: Phase2Jester_10
       rect:
         serializedVersion: 2
-        x: 11149
+        x: 11159
         y: 148
-        width: 1555
+        width: 1538
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -288,9 +288,9 @@ TextureImporter:
       name: Phase2Jester_12
       rect:
         serializedVersion: 2
-        x: 12743
+        x: 12760
         y: 148
-        width: 1537
+        width: 1517
         height: 1255
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

@@ -119,6 +119,9 @@ MonoBehaviour:
   bossCycle: 3
   bossTimer: 0.8
   summon: 1
+  onDefeat:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!50 &3437044646028921914
 Rigidbody2D:
   serializedVersion: 4

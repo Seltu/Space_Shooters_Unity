@@ -12,6 +12,7 @@ public class PlayerShip : Ship
     private Rigidbody2D _rb;
     private ButtonAxis _vertical = new ButtonAxis(KeyCode.W, KeyCode.S);
     private ButtonAxis _horizontal = new ButtonAxis(KeyCode.D, KeyCode.A);
+    private AudioSource bulletSound;
 
     public PlayerShip()
     {
@@ -31,6 +32,7 @@ public class PlayerShip : Ship
     {
         base.Start();
         _rb = GetComponent<Rigidbody2D>();
+        bulletSound = GetComponent<AudioSource>();
     }
 
     protected override void LoseHp(int receivedDamage)
@@ -66,6 +68,7 @@ public class PlayerShip : Ship
             shot.Velocity = dir;
             shots.Add(shot);
         }
+        bulletSound.Play();
         return shots;
     }
 

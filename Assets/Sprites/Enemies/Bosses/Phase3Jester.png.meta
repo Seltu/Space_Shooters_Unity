@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -120,12 +120,12 @@ TextureImporter:
       name: Phase3Jester_0
       rect:
         serializedVersion: 2
-        x: 194
-        y: 252
-        width: 1503
+        x: 146
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: Phase3Jester_1
       rect:
         serializedVersion: 2
-        x: 1755
-        y: 252
-        width: 1503
+        x: 1684
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Phase3Jester_2
       rect:
         serializedVersion: 2
-        x: 3344
-        y: 252
-        width: 1511
+        x: 3276
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: Phase3Jester_3
       rect:
         serializedVersion: 2
-        x: 4934
-        y: 252
-        width: 1554
+        x: 4913
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,12 +204,12 @@ TextureImporter:
       name: Phase3Jester_4
       rect:
         serializedVersion: 2
-        x: 6531
-        y: 252
-        width: 1553
+        x: 6534
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: Phase3Jester_5
       rect:
         serializedVersion: 2
-        x: 8101
-        y: 252
-        width: 1602
+        x: 8124
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: Phase3Jester_7
       rect:
         serializedVersion: 2
-        x: 9735
-        y: 252
-        width: 1579
+        x: 9766
+        y: 254
+        width: 1541
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: Phase3Jester_9
       rect:
         serializedVersion: 2
-        x: 11413
-        y: 252
-        width: 1562
+        x: 11401
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -288,12 +288,12 @@ TextureImporter:
       name: Phase3Jester_11
       rect:
         serializedVersion: 2
-        x: 13009
-        y: 252
-        width: 1534
+        x: 12968
+        y: 254
+        width: 1568
         height: 1258
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

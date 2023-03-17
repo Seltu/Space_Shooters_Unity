@@ -38,11 +38,13 @@ namespace Enemies.Bosses
             if (hp <= 1500 && _healthStage <= 1)
             {
                 //LoadPath("Sprites/boss_jester/destroyed_blue", 484, 254);
+                GetComponent<Animator>().SetBool("Destroyed2", true);
                 _moveSpeed = 2.2f;
                 _healthStage += 1;
             }
             else if (hp <= 3000 && _healthStage <= 0)
             {
+                GetComponent<Animator>().SetBool("Destroyed1", true);
                 _moveSpeed = 1.8f;
                 //LoadPath("Sprites/boss_jester/destroyed_pink", 484, 254);
                 _healthStage += 1;
