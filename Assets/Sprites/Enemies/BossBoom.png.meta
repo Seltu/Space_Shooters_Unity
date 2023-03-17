@@ -1,0 +1,772 @@
+fileFormatVersion: 2
+guid: b04cfdac083318e478d3ea8f61b97dc3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossBoom_0
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1570
+        width: 115
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09100898d364914ea204253f8a50cf9
+      internalID: -943479465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1562
+        width: 284
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b48373001ec6045af97e0eb91f14f2
+      internalID: 1384457488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1570
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0af34d04582ca943b952e6c5bdf073e
+      internalID: 1799955178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_3
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 1553
+        width: 90
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf143aa3ce22de944ac39b2f49a40e45
+      internalID: -88245600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_4
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1528
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce2cbfdbb093ee45809ce23949a2b42
+      internalID: 1209188283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1167
+        width: 122
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe14f5c2abbb6604aa786ddc36dad7c0
+      internalID: 230180928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1150
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a6a58ea56ddee4b955e4f2880b8bcf
+      internalID: -2123074074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_9
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1129
+        width: 194
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb845be7de49fb48aa73a602e8b1768
+      internalID: 364654359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_10
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1108
+        width: 219
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c585821f869394e82a2d92efbeeeb9
+      internalID: -473232321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_11
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1098
+        width: 257
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2033018b5e80ee4db7fb2b576457ba5
+      internalID: -994584094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_29
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 730
+        width: 295
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdf049b7d5ec3541b445a5059b623e0
+      internalID: 1648128581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_30
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 712
+        width: 335
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b79ed91b94c814fb2116856a6db560
+      internalID: -540701000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_32
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 810
+        width: 133
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbb431205e864940bcd1f0f70ccf4a2
+      internalID: 87012631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_33
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 811
+        width: 130
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9200dd2f274c56e469dc6ec7b491c572
+      internalID: 1975143682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_34
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 812
+        width: 130
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79e2bd97032c3c44a28899918934740
+      internalID: 1020193168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_42
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 459
+        width: 121
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065c12ded90786e4bb6755b567e8bbf4
+      internalID: -8186484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_43
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 465
+        width: 126
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89758e22363cfb04ea1b5525e8ed339d
+      internalID: -880033165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_49
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 472
+        width: 104
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153b0231bc22e6146957c5ab08f82f96
+      internalID: 198605736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_51
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 462
+        width: 116
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb777e6dd791134ba1c0c88c0063201
+      internalID: 54848575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_52
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 476
+        width: 109
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98873d4e8335744db97f7cf299feeaa
+      internalID: 747060454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_91
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 120
+        width: 110
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d61a7eaf69f9447a012ae06708f269
+      internalID: 1535014535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_95
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 117
+        width: 120
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39c991498a63af4f9001cb8002ecf42
+      internalID: -870747773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_98
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 142
+        width: 128
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ade551e11b5e147ab15e4c2db1a0ce
+      internalID: 667871657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_100
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 138
+        width: 111
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3692ba06f12c544aaaa138067486e2c
+      internalID: -1377975034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossBoom_101
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 136
+        width: 112
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a787c2f920e2e64ba3a4e3152a0c832
+      internalID: -1173662457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BossBoom_25: 1847318212
+      BossBoom_97: -472351745
+      BossBoom_19: 995833749
+      BossBoom_67: -91913383
+      BossBoom_14: -443365383
+      BossBoom_29: 1648128581
+      BossBoom_62: 567022267
+      BossBoom_35: -591993180
+      BossBoom_79: -925413029
+      BossBoom_100: -1377975034
+      BossBoom_96: 2019063185
+      BossBoom_33: 1975143682
+      BossBoom_2: 1799955178
+      BossBoom_85: -778236263
+      BossBoom_3: -88245600
+      BossBoom_24: 93844693
+      BossBoom_27: 1856663691
+      BossBoom_41: -2137965371
+      BossBoom_78: 229172987
+      BossBoom_15: 88995934
+      BossBoom_99: 349979483
+      BossBoom_4: 1209188283
+      BossBoom_82: 1098362815
+      BossBoom_43: -880033165
+      BossBoom_5: 1242954564
+      BossBoom_28: 480233775
+      BossBoom_17: 634444180
+      BossBoom_23: 680581947
+      BossBoom_9: 364654359
+      BossBoom_72: 1659549359
+      BossBoom_106: 1421704293
+      BossBoom_57: -1223755237
+      BossBoom_10: -473232321
+      BossBoom_34: 1020193168
+      BossBoom_108: -743658225
+      BossBoom_32: 87012631
+      BossBoom_60: 2088493577
+      BossBoom_109: -694829836
+      BossBoom_42: -8186484
+      BossBoom_45: 1273560109
+      BossBoom_13: 91252722
+      BossBoom_98: 667871657
+      BossBoom_73: 637757523
+      BossBoom_26: -1812618279
+      BossBoom_64: 1083604138
+      BossBoom_0: -943479465
+      BossBoom_66: -1080685424
+      BossBoom_77: 1949719353
+      BossBoom_90: -1961488021
+      BossBoom_37: -2108341340
+      BossBoom_84: -1125110035
+      BossBoom_55: -1957631977
+      BossBoom_11: -994584094
+      BossBoom_80: -1234660751
+      BossBoom_52: 747060454
+      BossBoom_20: 2009060322
+      BossBoom_59: 1290934515
+      BossBoom_94: -158685859
+      BossBoom_91: 1535014535
+      BossBoom_101: -1173662457
+      BossBoom_87: 174682369
+      BossBoom_83: 1454175001
+      BossBoom_104: 1654251132
+      BossBoom_49: 198605736
+      BossBoom_30: -540701000
+      BossBoom_92: 1476434875
+      BossBoom_48: -493019719
+      BossBoom_86: 667478360
+      BossBoom_56: -1832531302
+      BossBoom_107: -1774997418
+      BossBoom_61: 204702911
+      BossBoom_50: 51949830
+      BossBoom_71: 285112087
+      BossBoom_93: -1910771102
+      BossBoom_110: -482261743
+      BossBoom_6: 1199659419
+      BossBoom_70: 160570260
+      BossBoom_102: -1299054772
+      BossBoom_88: -86385425
+      BossBoom_12: -2092866304
+      BossBoom_95: -870747773
+      BossBoom_36: 2020448241
+      BossBoom_44: -2051992567
+      BossBoom_18: -831312703
+      BossBoom_58: -1964293357
+      BossBoom_69: -1837294720
+      BossBoom_103: -103033290
+      BossBoom_38: 1287921026
+      BossBoom_8: -2123074074
+      BossBoom_1: 1384457488
+      BossBoom_53: -1376756762
+      BossBoom_105: 602802859
+      BossBoom_111: 1700602109
+      BossBoom_74: -986122446
+      BossBoom_39: -824948644
+      BossBoom_65: -1892998753
+      BossBoom_68: 779092075
+      BossBoom_22: -1788514101
+      BossBoom_46: 2010027297
+      BossBoom_40: -1374937980
+      BossBoom_81: -453302711
+      BossBoom_7: 230180928
+      BossBoom_16: 749419771
+      BossBoom_76: -1016348584
+      BossBoom_31: 2133202187
+      BossBoom_75: -461725773
+      BossBoom_51: 54848575
+      BossBoom_47: -927282999
+      BossBoom_21: -2029302664
+      BossBoom_54: -1767621811
+      BossBoom_89: 1634029664
+      BossBoom_63: 2065042555
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

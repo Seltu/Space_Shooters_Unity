@@ -17,9 +17,14 @@ namespace Enemies.Bosses
 
         protected override void LoseHp(int receivedDamage)
         {
-            if(hp - receivedDamage <= 0)
+            if (hp - receivedDamage <= 0)
+            {
                 onDefeat.Invoke();
-            base.LoseHp(receivedDamage);
+                GetComponent<Animator>().SetBool("isDead", true);
+                Destroy(gameObject, 1.7f);
+            }
+            else
+                base.LoseHp(receivedDamage);
         }
 
         protected void ChangeShot(float time, int speed)
