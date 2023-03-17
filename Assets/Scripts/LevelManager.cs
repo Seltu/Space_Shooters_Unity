@@ -5,6 +5,7 @@ using System.Linq;
 using Enemies.Bosses;
 using Pickups;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.U2D;
@@ -44,7 +45,8 @@ public class LevelManager : MonoBehaviour
     public int progress;
     private float _levelTimer = 1;
     private bool _bossFight;
-    public GameObject audioController;
+    private bool _makeBoss;
+    public MusicController audioController;
     
     private void Update() {
         if (_levelTimer > 0) {
@@ -78,13 +80,20 @@ public class LevelManager : MonoBehaviour
             return;
         }*/
         if (progress >= levels[level].rounds.Count) {
+            if (_makeBoss)
+            {
+                _boss = Instantiate(levels[level].boss);
+                _boss.onDefeat.AddListener(NextLevel);
+                _bossFight = true;
+            }
+            else
+            {
+                _levelTimer = 8f;
+                audioController.PlayWarning();
+            }
             // on_boss = true;
-            _boss = Instantiate(levels[level].boss);
-            _boss.onDefeat.AddListener(NextLevel);
             // AudioSource.PlayClipAtPoint(warningBossSoundEffect, Vector3.zero);
-            _bossFight = true;
-            _levelTimer = 10f;
-            audioController.GetComponent<MusicController>().PlayWarning();
+            _makeBoss = true;
             return;
         }
         var currentRound = levels[level].rounds[progress];
