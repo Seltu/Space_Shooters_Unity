@@ -147,6 +147,7 @@ MonoBehaviour:
   bossCycle: 5
   bossTimer: 0.8
   summon: 1
+  bossExplosion: {fileID: 4634968675061477056, guid: c29a0355713a2b24d8076656b2b6a0d6, type: 3}
   onDefeat:
     m_PersistentCalls:
       m_Calls: []

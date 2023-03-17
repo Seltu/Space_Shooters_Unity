@@ -13,6 +13,7 @@ namespace Enemies.Bosses
         public bool summon = true;
         private bool _changedShot = false;
         private GameObject _target = null;
+        public GameObject bossExplosion;
         public UnityEvent onDefeat;
 
         protected override void LoseHp(int receivedDamage)
@@ -20,8 +21,8 @@ namespace Enemies.Bosses
             if (hp - receivedDamage <= 0)
             {
                 onDefeat.Invoke();
-                GetComponent<Animator>().SetBool("isDead", true);
-                Destroy(gameObject, 1.7f);
+                Instantiate(bossExplosion, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity );
+                Destroy(gameObject);
             }
             else
                 base.LoseHp(receivedDamage);
