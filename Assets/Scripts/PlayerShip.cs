@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Pickups;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerShip : Ship
 {
@@ -14,7 +15,8 @@ public class PlayerShip : Ship
     private ButtonAxis _horizontal = new ButtonAxis(KeyCode.D, KeyCode.A);
     private AudioSource bulletSound;
     public SpriteRenderer healthbar;
-
+    public UnityEvent onDeath;
+    
     public PlayerShip()
     {
         score = 0;
@@ -39,7 +41,11 @@ public class PlayerShip : Ship
     protected override void LoseHp(int receivedDamage)
     {
         if (_invincibleTimer > 0) return;
-        if(hp - receivedDamage <= 0) healthbar.GetComponent<PlayerHealthbar>().PlayerDead();
+        if (hp - receivedDamage <= 0)
+        {
+            healthbar.GetComponent<PlayerHealthbar>().PlayerDead();
+            onDeath.Invoke();
+        }
         base.LoseHp(receivedDamage);
         _invincibleTimer = invincibilityTime;
     }

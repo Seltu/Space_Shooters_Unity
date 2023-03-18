@@ -7,6 +7,7 @@ using Pickups;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.U2D;
 using Random = UnityEngine.Random;
@@ -47,7 +48,17 @@ public class LevelManager : MonoBehaviour
     private bool _bossFight;
     private bool _makeBoss;
     public MusicController audioController;
-    
+
+    private void Start()
+    {
+        for (var index = 0; index < players.Count; index++)
+        {
+            var player = players[index];
+            player.onDeath.AddListener(PlayerDied);
+            players.Remove(player);
+        }
+    }
+
     private void Update() {
         if (_levelTimer > 0) {
             _levelTimer-=Time.deltaTime;
@@ -152,5 +163,13 @@ public class LevelManager : MonoBehaviour
     {
         if(Random.Range(1, 10)==1)
             Instantiate(pickupPrefabs[Random.Range(0, pickupPrefabs.Count)], pos, quaternion.identity);
+    }
+
+    private void PlayerDied()
+    {
+        if (players.Count <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
