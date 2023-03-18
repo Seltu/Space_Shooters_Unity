@@ -104,6 +104,8 @@ public class LevelManager : MonoBehaviour
     {
         level++;
         _bossFight = false;
+        _makeBoss = false;
+        audioController.BackToBasic();
         progress = 0;
         foreach (var player in players)
         {
