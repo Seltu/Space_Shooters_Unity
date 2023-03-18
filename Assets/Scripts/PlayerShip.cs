@@ -13,6 +13,7 @@ public class PlayerShip : Ship
     private ButtonAxis _vertical = new ButtonAxis(KeyCode.W, KeyCode.S);
     private ButtonAxis _horizontal = new ButtonAxis(KeyCode.D, KeyCode.A);
     private AudioSource bulletSound;
+    public SpriteRenderer healthbar;
 
     public PlayerShip()
     {
@@ -38,6 +39,7 @@ public class PlayerShip : Ship
     protected override void LoseHp(int receivedDamage)
     {
         if (_invincibleTimer > 0) return;
+        if(hp - receivedDamage <= 0) healthbar.GetComponent<PlayerHealthbar>().PlayerDead();
         base.LoseHp(receivedDamage);
         _invincibleTimer = invincibilityTime;
     }
@@ -97,7 +99,7 @@ public class PlayerShip : Ship
     public void LevelScale(int level)
     {
         StopAllCoroutines();
-        maxHp = 5 + level;
+        maxHp = 10;
         hp = maxHp;
         numberOfShots = 1 + level;
         damage = 10 - level * 2;
